@@ -20,5 +20,6 @@
 }
 
 .badge__none {
-  background-color: white;
+  background-color: beige;
+  width: 1px;
 }

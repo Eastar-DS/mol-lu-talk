@@ -1,10 +1,16 @@
 .user-component {
   justify-content: space-between;
+  border-radius: 15px;
+  transition: background-color 1s ease-in-out;
 }
 .user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+}
+
+.user-component:hover {
+  background-color: var(--pink2);
 }
 
 .user-component__avatar {
@@ -63,4 +69,12 @@
 
 .user-component__more {
   margin-bottom: 60px;
+}
+
+.user-component__more i {
+  color: var(--pink);
+}
+
+.find-and-more {
+  color: var(--pink);
 }

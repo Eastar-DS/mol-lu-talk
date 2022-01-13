@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--pink);
 }
 
 .find-icons__icon i {
@@ -128,4 +129,24 @@
 
 .open-post__heart-count span {
   margin-left: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 0.7s linear infinite;
 }
